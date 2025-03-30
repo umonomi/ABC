@@ -3,7 +3,6 @@
 
 using namespace std;
 
-// Функция для конвертации строкового представления шестнадцатеричных чисел в десятичные
 double hexToDec(const char* hex) {
     double result = 0.0;
     bool isFractional = false;
@@ -37,23 +36,18 @@ double hexToDec(const char* hex) {
 }
 
 int main() {
-    // Задача 1: сложение двух чисел в десятичной системе счисления
     double sum = 34.435 + 32.244;
     cout << "Результат 34.435 + 32.244 = " << sum << endl;
 
-    // Задача 2: умножение и вычитание чисел
     double result = (9.15 * 5.25) - 7.525;
     cout << "Результат (9.15 * 5.25) - 7.525 = " << result << endl;
 
-    // Задача 3: сложение и вычитание чисел
     result = 18.125 - 12.15 + 9;
     cout << "Результат 18.125 - 12.15 + 9 = " << result << endl;
 
-    // Задача 4: вычисление с шестнадцатеричными числами
     double hexResult = hexToDec("EEFA7.7") - hexToDec("A5A") * hexToDec("55.A");
     cout << "Результат EEFA7.7 - A5A * 55.A = " << hexResult << endl;
 
-    // Задача 5: вычисление с шестнадцатеричными числами
     double hexResult2 = hexToDec("BBD") + hexToDec("1F") * hexToDec("7") - hexToDec("D1.5");
     cout << "Результат BBD + 1F * 7 - D1.5 = " << hexResult2 << endl;
 
