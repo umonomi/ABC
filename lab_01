@@ -13,22 +13,18 @@ int main()
 
     int rows = 0, cols = 0;
 
-    // Ввод размеров массива
     cout << "Enter the number of rows (max " << MAX_ROWS << "): ";
     cin >> rows;
     cout << "Enter the number of columns (max " << MAX_COLS << "): ";
     cin >> cols;
 
-    // Проверка на превышение максимальных размеров
     if (rows > MAX_ROWS || cols > MAX_COLS) {
         cout << "Exceeded maximum array size.\n";
         return 1;
     }
 
-    // Создание двумерного массива
     int arr[MAX_ROWS][MAX_COLS];
 
-    // Ввод элементов массива
     cout << "Enter the elements of the array:\n";
     for (int i = 0; i < rows; i++)
     {
@@ -52,7 +48,6 @@ int main()
 
         if (choice == 1)
         {
-            // Проверка на строку с нечётными элементами
             bool hasOddRow = false;
             for (int i = 0; i < rows; i++)
             {
@@ -79,7 +74,6 @@ int main()
         }
         else if (choice == 2)
         {
-            // Проверка на строку с элементами, кратными a или b
             int a, b;
             cout << "Enter number a: ";
             cin >> a;
@@ -112,7 +106,6 @@ int main()
         }
         else if (choice == 3)
         {
-            // Печать каждого второго элемента массива
             cout << "Every second element of the array (2nd, 4th, etc.):\n";
             for (int i = 0; i < rows; i++)
             {
@@ -133,7 +126,6 @@ int main()
             cout << "Invalid choice. Please try again.\n";
         }
 
-        // Ожидание ввода для продолжения
         cin.get();
         cin.get();
     }
